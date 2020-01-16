@@ -27,7 +27,6 @@ def generate():
         and prints it on another label"""
 
     nChar = int(entry1.get())
-    entry1.delete(0, tk.END)
     SYMBOL = '!?'
     passw = ''.join([choice(ascii_letters + digits + SYMBOL)
                      for i in range(nChar)])
