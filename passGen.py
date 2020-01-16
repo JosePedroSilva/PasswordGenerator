@@ -23,7 +23,8 @@ canvas1.create_window(200, 140, window=entry1)
 
 
 def generate():
-    """Generates a random password"""
+    """Generates a random password 
+        and prints it on another label"""
 
     nChar = int(entry1.get())
     entry1.delete(0, tk.END)
