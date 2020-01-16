@@ -13,4 +13,4 @@ passw = ''.join([choice(ascii_letters + digits + SYMBOL)
                  for i in range(userInput)])
 
 print('Your new pass is:\n')
-print(passw)
+print(f'{passw}\n')
