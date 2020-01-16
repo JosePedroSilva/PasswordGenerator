@@ -1,17 +1,24 @@
 ####################################
 # Random Password Generator
 ####################################
+import tkinter as tk
 from string import ascii_letters, digits
 from random import choice
-from tkinter import *
+
+root = tk.Tk()
+root.geometry('400x200')
 
 SYMBOL = '!?'
 
-userInput = input('Which size do you want the password to have?\n>>> ')
-userInput = int(userInput)
-
 passw = ''.join([choice(ascii_letters + digits + SYMBOL)
-                 for i in range(userInput)])
+                 for i in range(10)])
 
-print('Your new pass is:\n')
-print(f'{passw}\n')
+label = tk.Label(root, text="Password Generator")
+label.pack(padx=10, pady=10)
+
+entryText = tk.StringVar()
+entry = tk.Entry(root, textvariable=entryText)
+entryText.set(passw)
+entry.pack(padx=10, pady=10)
+
+root.mainloop()
