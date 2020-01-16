@@ -1,7 +1,7 @@
 # PasswordGenerator
 #### Password generator with GUI
 
-![app image](image/passGen.png)
+![app image](image/PassGen.png)
 
 User can define the size of the password (number of characters)
 
