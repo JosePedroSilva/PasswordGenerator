@@ -7,10 +7,10 @@ from random import choice
 
 
 def generate():
+    entry.delete(0, tk.END)
     SYMBOL = '!?'
     passw = ''.join([choice(ascii_letters + digits + SYMBOL)
                      for i in range(10)])
-    entry.delete(0, tk.END)
     entry.insert(0, passw)
 
 
@@ -26,7 +26,6 @@ label.pack(padx=10, pady=10)
 
 entryText = tk.StringVar()
 entry = tk.Entry(root, textvariable=entryText)
-entryText.set(generate)
 entry.pack(side=tk.TOP)
 
 button = tk.Button(root, text='Generate', command=generate)
