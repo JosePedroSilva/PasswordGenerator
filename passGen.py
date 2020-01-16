@@ -3,6 +3,7 @@
 ####################################
 from string import ascii_letters, digits
 from random import choice
+from tkinter import *
 
 SYMBOL = '!?'
 
